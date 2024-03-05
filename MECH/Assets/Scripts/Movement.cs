@@ -9,14 +9,18 @@ public class Movement : MonoBehaviour
     private float horizontal;
     private float vertical;
     private float speed = 14f;
-    private float jumpingPower = 18f;
-    private bool isFacingRight = true;
+    private float jumpingPower = 18f; 
+    float inputHorizontal;
+    float inputVertical;
+
+    bool facingRight = true;
+    bool facingDown = true;
 
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundcheck;
     [SerializeField] private LayerMask groundLayer;
 
-    private bool isGravityDown = true;
+    public bool isGravityDown = true;
 
 
     // Start is called before the first frame update
@@ -32,7 +36,7 @@ public class Movement : MonoBehaviour
 
         if (Input.GetButtonDown("Jump") && IsGrounded())
         {
-            rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
+            rb.velocity = new Vector2(rb.velocity.y, jumpingPower);
         }
 
         if (Input.GetButtonUp("Jump") && rb.velocity.y > 0f)
@@ -40,7 +44,6 @@ public class Movement : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
         }
 
-        Flip();
     }
 
     private void FixedUpdate()
@@ -53,23 +56,38 @@ public class Movement : MonoBehaviour
 
         rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
 
+        {
+            inputHorizontal = Input.GetAxisRaw("Horizontal");
+            inputVertical = Input.GetAxisRaw("Vertical");
+
+            if (inputHorizontal != 0)
+            {
+                rb.AddForce(new Vector2(inputHorizontal * speed, 0f));
+            }
+
+            if (inputHorizontal > 0 && !facingRight)
+            {
+                Flip();
+            }
+            else if (inputHorizontal < 0 && facingRight)
+            {
+                Flip();
+            }
+        }
+
     }
 
+    void Flip()
+    {
+        Vector3 currentScale = gameObject.transform.localScale;
+        currentScale.x *= -1;
+        gameObject.transform.localScale = currentScale;
+
+        facingRight = !facingRight;
+    }
     private bool IsGrounded()
     {
         return Physics2D.OverlapCircle(groundcheck.position, 0.3f, groundLayer);
-    }
-
-
-    private void Flip()
-    {
-        if (isFacingRight && horizontal < 0f || isFacingRight && horizontal > 0f)
-        {
-            isFacingRight = !isFacingRight;
-            Vector3 localScale = transform.localScale;
-            localScale.x *= -1f;
-            transform.localScale = localScale;
-        }
     }
 
     void ReverseGravity()
@@ -83,8 +101,14 @@ public class Movement : MonoBehaviour
         }
 
         else if (isGravityDown == false)
-            rb.gravityScale = 4;
+            rb.gravityScale = 1;
 
         isGravityDown = !isGravityDown;
+
+        Vector3 OrientationY = gameObject.transform.localScale;
+        OrientationY.y *= -1;
+        gameObject.transform.localScale = OrientationY;
+
+        facingDown = !facingDown;
     }
 }

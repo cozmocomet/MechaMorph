@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 9005f3d495c9b3046a7b12469e496267
+guid: dbb4c69f77539c444857df2235ee1736
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8826187417405292688
-    second: robo left_0
+      213: 8364863931219755809
+    second: Metal_plate_01_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: robo left_0
+      name: Metal_plate_01_0
       rect:
         serializedVersion: 2
-        x: 62
-        y: 85
-        width: 414
-        height: 710
+        x: 0
+        y: 0
+        width: 2048
+        height: 1022
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -114,8 +114,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 090077761baec7a70800000000000000
-      internalID: 8826187417405292688
+      spriteID: 123c4de2d67f51470800000000000000
+      internalID: 8364863931219755809
       vertices: []
       indices: 
       edges: []
