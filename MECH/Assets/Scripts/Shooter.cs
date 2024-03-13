@@ -43,31 +43,19 @@ public class Shooter : MonoBehaviour
 
             }
         }
-        /*
-        if (!canFire)
-        {
-            timer += Time.deltaTime;
-            if(timer > timeBEtweenFiring)
-            {
-                canFire = true;
-                timer = 1;
-            }
-        }
-        */
 
         if (Input.GetMouseButtonDown(0))
         {
-            if(canFire)
+            if (canFire)
             {
                 Instantiate(bullet, bulletTransform.position, Quaternion.identity);
                 canFire = false;
-                Timer();
-            }
-            
-            
-        }
-    }
 
+            }
+        }
+
+        Timer();
+    }
     void Flip()
     {
         Vector3 currentScale = gameObject.transform.localScale;

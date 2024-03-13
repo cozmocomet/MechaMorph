@@ -4,6 +4,9 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class EnemyKill : MonoBehaviour
+
+
+
 {
     private bool loadingScene = false;
 
@@ -18,7 +21,14 @@ public class EnemyKill : MonoBehaviour
             }
         }
 
+        void OnCollisionEnter(Collision col)
+        {
+            if (col.transform.tag == "Bullet")
+            {
+                Destroy(gameObject);
+            }
+        }
 
     }
-
+    
 }

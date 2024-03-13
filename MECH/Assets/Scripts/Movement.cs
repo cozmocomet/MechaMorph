@@ -9,14 +9,14 @@ public class Movement : MonoBehaviour
     private float horizontal;
     private float vertical;
     private float speed = 14f;
-    private float jumpingPower = 18f; 
+    private float jumpingPower = 18f;
     float inputHorizontal;
     float inputVertical;
 
     bool facingRight = true;
     bool facingDown = true;
 
-    [SerializeField] private Rigidbody2D rb;
+    private Rigidbody2D rb;
     [SerializeField] private Transform groundcheck;
     [SerializeField] private LayerMask groundLayer;
 
@@ -88,27 +88,37 @@ public class Movement : MonoBehaviour
     private bool IsGrounded()
     {
         return Physics2D.OverlapCircle(groundcheck.position, 0.3f, groundLayer);
+        Debug.Log("grounded");
     }
 
     void ReverseGravity()
     {
 
         Debug.Log("Gravity reversed");
+        Vector3 OrientationY = gameObject.transform.localScale;
+        OrientationY.y *= -1;
 
         if (isGravityDown == true)
         {
-            rb.gravityScale = -1;
+           // horizontal = Input.GetAxisRaw("Horizontal");
+            rb.gravityScale = 1;
+           
+            gameObject.transform.localScale = OrientationY;
+            isGravityDown = !isGravityDown;
+            facingDown = !facingDown;
         }
 
         else if (isGravityDown == false)
-            rb.gravityScale = 1;
+        {
+            rb.gravityScale = -1;
+           // horizontal = -Input.GetAxisRaw("Horizontal");
+            isGravityDown = !isGravityDown;
+            facingDown = !facingDown;
+        }
 
-        isGravityDown = !isGravityDown;
+      
 
-        Vector3 OrientationY = gameObject.transform.localScale;
-        OrientationY.y *= -1;
-        gameObject.transform.localScale = OrientationY;
-
-        facingDown = !facingDown;
     }
 }
+
+
