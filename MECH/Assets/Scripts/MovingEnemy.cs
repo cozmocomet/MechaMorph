@@ -14,7 +14,7 @@ public class MovingEnemy : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        player = FindObjectOfType(typeof(Player)) as Player;
+        player = FindFirstObjectByType(typeof(Player)) as Player;
         moveSpeed = 2f;
         localScale = transform.localScale;
     }

@@ -8,7 +8,7 @@ public class Movement : MonoBehaviour
 {
     private float horizontal;
     private float vertical;
-    private float speed = 14f;
+    private float speed = 17f;
     private float jumpingPower = 18f;
     float inputHorizontal;
     float inputVertical;
@@ -44,15 +44,7 @@ public class Movement : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
         }
 
-    }
 
-    private void FixedUpdate()
-    {
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            Debug.Log("E Pressed");
-            ReverseGravity();
-        }
 
         rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
 
@@ -75,7 +67,56 @@ public class Movement : MonoBehaviour
             }
         }
 
+        {
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                Debug.Log("E Pressed");
+                ReverseGravity();
+            }
+        }
     }
+
+  //  private void FixedUpdate()
+    //{
+        //if (Input.GetKeyDown(KeyCode.E))
+       // {
+        //    Debug.Log("E Pressed");
+        //    ReverseGravity();
+      //  }
+   // }
+    
+
+    /* private void FixedUpdate()
+     {
+         if (Input.GetKeyDown(KeyCode.E))
+         {
+             Debug.Log("E Pressed");
+             ReverseGravity();
+         }
+
+         rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
+
+         {
+             inputHorizontal = Input.GetAxisRaw("Horizontal");
+             inputVertical = Input.GetAxisRaw("Vertical");
+
+             if (inputHorizontal != 0)
+             {
+                 rb.AddForce(new Vector2(inputHorizontal * speed, 0f));
+             }
+
+             if (inputHorizontal > 0 && !facingRight)
+             {
+                 Flip();
+             }
+             else if (inputHorizontal < 0 && facingRight)
+             {
+                 Flip();
+             }
+         }
+
+     }
+    */
 
     void Flip()
     {
@@ -88,37 +129,77 @@ public class Movement : MonoBehaviour
     private bool IsGrounded()
     {
         return Physics2D.OverlapCircle(groundcheck.position, 0.3f, groundLayer);
-        Debug.Log("grounded");
     }
 
     void ReverseGravity()
     {
+        Vector3 currentScale = gameObject.transform.localScale;
+        isGravityDown = !isGravityDown;
 
-        Debug.Log("Gravity reversed");
-        Vector3 OrientationY = gameObject.transform.localScale;
-        OrientationY.y *= -1;
+
 
         if (isGravityDown == true)
         {
            // horizontal = Input.GetAxisRaw("Horizontal");
-            rb.gravityScale = 1;
-           
-            gameObject.transform.localScale = OrientationY;
-            isGravityDown = !isGravityDown;
-            facingDown = !facingDown;
-        }
+            rb.gravityScale = 4;
 
+
+
+
+
+
+            gameObject.transform.localScale = new Vector2(currentScale.x, 1);
+        }
         else if (isGravityDown == false)
         {
-            rb.gravityScale = -1;
-           // horizontal = -Input.GetAxisRaw("Horizontal");
-            isGravityDown = !isGravityDown;
+            
+            rb.gravityScale = -4;
+            // horizontal = -Input.GetAxisRaw("Horizontal");
+            //isGravityDown = !isGravityDown;
             facingDown = !facingDown;
+            Debug.Log("Upside DOwn");
+         
+
+
+            gameObject.transform.localScale = new Vector2(currentScale.x, -1);
         }
 
-      
 
+        //currentScale.y *= -1;
+        //gameObject.transform.localScale = currentScale;
     }
+   
+
+    /*void RevGrav()
+    {
+        Debug.Log("Gravity reversed");
+
+        Vector3 currentScale = gameObject.transform.localScale;
+        currentScale.y *= -1;
+        gameObject.transform.localScale = currentScale;
+
+
+        if (isGravityDown == true)
+        {
+            // horizontal = Input.GetAxisRaw("Horizontal");
+            rb.gravityScale = 4;
+
+            facingDown = !facingDown;
+            isGravityDown = !isGravityDown;
+
+
+        }
+        else if (isGravityDown == false)
+        {
+            rb.gravityScale = -4;
+            // horizontal = -Input.GetAxisRaw("Horizontal");
+            isGravityDown = !isGravityDown;
+            facingDown = !facingDown;
+            
+        }
+    }
+    */
+
 }
 
 
