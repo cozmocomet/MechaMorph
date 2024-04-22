@@ -7,6 +7,8 @@ public class EnemyHealth : MonoBehaviour
     public int health;
     private int currentHealth;
 
+    public GameObject[] itemDrops;
+
     // Start is called before the f
     // irst frame update
     void Start()
@@ -20,11 +22,20 @@ public class EnemyHealth : MonoBehaviour
         if (currentHealth <= 0)
         {
             Destroy(gameObject);
+            ItemDrop();
         }
     }
 
     public void damageEnemy(int damage)
     {
         currentHealth -= damage;
+    }
+
+    private void ItemDrop()
+    {
+        for (int i = 0; i < itemDrops.Length; i++)
+        {
+            Instantiate(itemDrops[i], transform.position + new Vector3(0, 1, 0), Quaternion.identity) ;
+        }
     }
 }

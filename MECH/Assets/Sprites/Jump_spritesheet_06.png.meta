@@ -1,22 +1,25 @@
 fileFormatVersion: 2
-guid: d51e4967b803a35488c31b784f83ac6b
+guid: 468a49333f7559a459eb18ec713ea77a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3901419240955103239
-    second: Walksheet_Part7_0
+      213: -3561508181252746510
+    second: Jump_spritesheet_06_0
   - first:
-      213: 6667399983837895473
-    second: Walksheet_Part7_1
+      213: 6790460810355471276
+    second: Jump_spritesheet_06_1
   - first:
-      213: -8833834133286197173
-    second: Walksheet_Part7_2
+      213: 1520966936762528212
+    second: Jump_spritesheet_06_2
   - first:
-      213: -791048726863673518
-    second: Walksheet_Part7_3
+      213: 8922338334510163200
+    second: Jump_spritesheet_06_3
   - first:
-      213: -7414200654105171276
-    second: Walksheet_Part7_4
+      213: -905189863708988988
+    second: Jump_spritesheet_06_4
+  - first:
+      213: 6103652247344047508
+    second: Jump_spritesheet_06_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -112,13 +115,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Walksheet_Part7_0
+      name: Jump_spritesheet_06_0
       rect:
         serializedVersion: 2
-        x: 54
-        y: 280
-        width: 4
-        height: 5
+        x: 26
+        y: 1537
+        width: 674
+        height: 1144
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -126,20 +129,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dcd4f7fcce2033b45846db9970cf1650
-      internalID: -716119949
+      spriteID: b2c2ee823e6b71548b5e4739b7298d4e
+      internalID: -51306129
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walksheet_Part7_1
+      name: Jump_spritesheet_06_1
       rect:
         serializedVersion: 2
-        x: 99
-        y: 33
-        width: 347
-        height: 593
+        x: 755
+        y: 1534
+        width: 675
+        height: 1110
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -147,20 +150,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 492d54751559356418b40d9eddee231e
-      internalID: 2073379661
+      spriteID: 12d2ed40a2c18274d806d4cafd6228bf
+      internalID: -491708031
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walksheet_Part7_2
+      name: Jump_spritesheet_06_2
       rect:
         serializedVersion: 2
-        x: 446
-        y: 33
-        width: 344
-        height: 593
+        x: 1447
+        y: 1537
+        width: 896
+        height: 1166
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -168,20 +171,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1a0469388edef784898c4a329379c024
-      internalID: 1262075772
+      spriteID: 34610a9ab529bd04b9822dcaec8f98db
+      internalID: 1760176485
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walksheet_Part7_3
+      name: Jump_spritesheet_06_3
       rect:
         serializedVersion: 2
-        x: 793
-        y: 33
-        width: 346
-        height: 593
+        x: 2363
+        y: 1546
+        width: 769
+        height: 1088
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -189,20 +192,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f4214019be164054abe331da23c12e82
-      internalID: -469680264
+      spriteID: 52133a75ed25f0348b2f17641fde79b5
+      internalID: -294477698
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walksheet_Part7_4
+      name: Jump_spritesheet_06_4
       rect:
         serializedVersion: 2
-        x: 1139
-        y: 33
-        width: 338
-        height: 593
+        x: 126
+        y: 350
+        width: 674
+        height: 1109
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -210,8 +213,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c01298d877d95cd49acf891b2e3cd6b6
-      internalID: 1214777068
+      spriteID: 9a9e5e37cbbfea54eb027c719383ac18
+      internalID: -1085706474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump_spritesheet_06_5
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 350
+        width: 675
+        height: 1144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2493580c083e354286fee7784b0e885
+      internalID: -862939240
       vertices: []
       indices: 
       edges: []
@@ -219,7 +243,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 16c2bdc39394f1041a5bf859184dce79
+    spriteID: 03c98c3ad9ec8cb41b3b7ba962a874b5
     internalID: 0
     vertices: []
     indices: 
@@ -227,11 +251,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Walksheet_Part7_0: -716119949
-      Walksheet_Part7_1: 2073379661
-      Walksheet_Part7_2: 1262075772
-      Walksheet_Part7_3: -469680264
-      Walksheet_Part7_4: 1214777068
+      Jump_spritesheet_06_0: -51306129
+      Jump_spritesheet_06_1: -491708031
+      Jump_spritesheet_06_2: 1760176485
+      Jump_spritesheet_06_3: -294477698
+      Jump_spritesheet_06_4: -1085706474
+      Jump_spritesheet_06_5: -862939240
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

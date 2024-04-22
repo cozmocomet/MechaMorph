@@ -1,22 +1,10 @@
 fileFormatVersion: 2
-guid: d51e4967b803a35488c31b784f83ac6b
+guid: b0effbb54a7b95a4192da1aaa5b8b401
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3901419240955103239
-    second: Walksheet_Part7_0
-  - first:
-      213: 6667399983837895473
-    second: Walksheet_Part7_1
-  - first:
-      213: -8833834133286197173
-    second: Walksheet_Part7_2
-  - first:
-      213: -791048726863673518
-    second: Walksheet_Part7_3
-  - first:
-      213: -7414200654105171276
-    second: Walksheet_Part7_4
+      213: 7780824627550937874
+    second: BackgroundWalls_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -112,106 +100,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Walksheet_Part7_0
+      name: BackgroundWalls_0
       rect:
         serializedVersion: 2
-        x: 54
-        y: 280
-        width: 4
-        height: 5
+        x: 0
+        y: 0
+        width: 2360
+        height: 1640
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: dcd4f7fcce2033b45846db9970cf1650
-      internalID: -716119949
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Walksheet_Part7_1
-      rect:
-        serializedVersion: 2
-        x: 99
-        y: 33
-        width: 347
-        height: 593
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 492d54751559356418b40d9eddee231e
-      internalID: 2073379661
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Walksheet_Part7_2
-      rect:
-        serializedVersion: 2
-        x: 446
-        y: 33
-        width: 344
-        height: 593
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1a0469388edef784898c4a329379c024
-      internalID: 1262075772
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Walksheet_Part7_3
-      rect:
-        serializedVersion: 2
-        x: 793
-        y: 33
-        width: 346
-        height: 593
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f4214019be164054abe331da23c12e82
-      internalID: -469680264
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Walksheet_Part7_4
-      rect:
-        serializedVersion: 2
-        x: 1139
-        y: 33
-        width: 338
-        height: 593
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c01298d877d95cd49acf891b2e3cd6b6
-      internalID: 1214777068
+      spriteID: 213e8c036ca0bfb60800000000000000
+      internalID: 7780824627550937874
       vertices: []
       indices: 
       edges: []
@@ -219,19 +123,14 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 16c2bdc39394f1041a5bf859184dce79
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      Walksheet_Part7_0: -716119949
-      Walksheet_Part7_1: 2073379661
-      Walksheet_Part7_2: 1262075772
-      Walksheet_Part7_3: -469680264
-      Walksheet_Part7_4: 1214777068
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

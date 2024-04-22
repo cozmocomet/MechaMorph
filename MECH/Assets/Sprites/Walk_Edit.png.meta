@@ -1,22 +1,22 @@
 fileFormatVersion: 2
-guid: d51e4967b803a35488c31b784f83ac6b
+guid: 9a5bf1fa1476ab94babf000f1632e273
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3901419240955103239
-    second: Walksheet_Part7_0
+      213: -3617638565559868870
+    second: Walk_Edit_0
   - first:
-      213: 6667399983837895473
-    second: Walksheet_Part7_1
+      213: 7533379552662469004
+    second: Walk_Edit_1
   - first:
-      213: -8833834133286197173
-    second: Walksheet_Part7_2
+      213: 1401619019616526363
+    second: Walk_Edit_2
   - first:
-      213: -791048726863673518
-    second: Walksheet_Part7_3
+      213: 5762630510575625539
+    second: Walk_Edit_3
   - first:
-      213: -7414200654105171276
-    second: Walksheet_Part7_4
+      213: 4775017027730971174
+    second: Walk_Edit_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -112,7 +112,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Walksheet_Part7_0
+      name: Walk_Edit_0
       rect:
         serializedVersion: 2
         x: 54
@@ -126,14 +126,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dcd4f7fcce2033b45846db9970cf1650
-      internalID: -716119949
+      spriteID: 137b680e99adddd43a94436862d96382
+      internalID: 59268333
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walksheet_Part7_1
+      name: Walk_Edit_1
       rect:
         serializedVersion: 2
         x: 99
@@ -147,19 +147,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 492d54751559356418b40d9eddee231e
-      internalID: 2073379661
+      spriteID: 345590b3aae953c41ac374e7a42140a1
+      internalID: 321366370
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walksheet_Part7_2
+      name: Walk_Edit_2
       rect:
         serializedVersion: 2
-        x: 446
+        x: 462
         y: 33
-        width: 344
+        width: 362
         height: 593
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -168,17 +168,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1a0469388edef784898c4a329379c024
-      internalID: 1262075772
+      spriteID: 62df3f7cfcd5fd04884a2908969ef556
+      internalID: 411156872
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walksheet_Part7_3
+      name: Walk_Edit_3
       rect:
         serializedVersion: 2
-        x: 793
+        x: 848
         y: 33
         width: 346
         height: 593
@@ -189,17 +189,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f4214019be164054abe331da23c12e82
-      internalID: -469680264
+      spriteID: 3dc972119f6fa7540bde4428f124ab6b
+      internalID: 1487584785
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walksheet_Part7_4
+      name: Walk_Edit_4
       rect:
         serializedVersion: 2
-        x: 1139
+        x: 1210
         y: 33
         width: 338
         height: 593
@@ -210,8 +210,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c01298d877d95cd49acf891b2e3cd6b6
-      internalID: 1214777068
+      spriteID: 1bc598e9f2f709c4aaa98f2271f2c8f0
+      internalID: -1845687401
       vertices: []
       indices: 
       edges: []
@@ -219,7 +219,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 16c2bdc39394f1041a5bf859184dce79
+    spriteID: bf94aa7129fdd85448f4444e1664b79a
     internalID: 0
     vertices: []
     indices: 
@@ -227,11 +227,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Walksheet_Part7_0: -716119949
-      Walksheet_Part7_1: 2073379661
-      Walksheet_Part7_2: 1262075772
-      Walksheet_Part7_3: -469680264
-      Walksheet_Part7_4: 1214777068
+      Walk_Edit_0: 59268333
+      Walk_Edit_1: 321366370
+      Walk_Edit_2: 411156872
+      Walk_Edit_3: 1487584785
+      Walk_Edit_4: -1845687401
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
