@@ -11,6 +11,7 @@ TagManager:
   - verticalWall_1
   - Gear
   - GameManager
+  - WallEnemy
   layers:
   - Default
   - TransparentFX
