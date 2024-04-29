@@ -2515,8 +2515,8 @@ GameObject:
   - component: {fileID: 327186990}
   - component: {fileID: 327186989}
   - component: {fileID: 327186988}
-  - component: {fileID: 327186992}
   - component: {fileID: 327186991}
+  - component: {fileID: 327186992}
   m_Layer: 5
   m_Name: Quit
   m_TagString: Untagged
@@ -2588,25 +2588,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 102900000, guid: 30b9a8ca39043344d8eb626baeed0c6a, type: 3}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 327186991}
+        m_TargetAssemblyTypeName: SceneChange, Assembly-CSharp
+        m_MethodName: MoveToScene
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 102900000, guid: 30b9a8ca39043344d8eb626baeed0c6a, type: 3}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -2671,7 +2659,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 327186986}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7226806eb3c5a143a01cab28a8e6b56, type: 3}
+  m_Script: {fileID: 11500000, guid: b0415d98e70447c4c8152aa022a1ee41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!4 &332301468 stripped
