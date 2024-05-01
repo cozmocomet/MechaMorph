@@ -15,6 +15,8 @@ public class GearManager : MonoBehaviour
         {
             instance = this;
         }
+
+        DontDestroyOnLoad(this.gameObject);
     }
 
     private void OnGUI()
